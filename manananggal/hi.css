@@ -42,9 +42,10 @@ h1 {text-align: center; text-shadow: 2px 2px 10px white; color: white;}
 
 .content-box {
 background-color:#2b0000;
-width: 100%;
-padding: 50px;
-margin: 20px;
+  width: 90%;       
+  max-width: 1024px;  
+  padding: 50px;
+  margin: 20px auto; 
 border-radius: 20px;
 font-size: 15px;
 text-shadow: 2px 2px 10px white;
@@ -52,18 +53,16 @@ text-align: justify;
 color: white;
 }
 
-.image-container {
-position: relative;
-width: 100%;
-max-width: 1024px;
-auto: 0 px;
+.image-container{ 
+  position: relative;
+  width: 90%;           
+  max-width: 1024px;    
+  margin: 20px auto;   
 }
-
 
 .image-container img {
   width: 100%;     
-  max-width: 1024px; 
-  height: auto;     
+  height: auto;  
   display: block;
 }
 
@@ -143,3 +142,4 @@ margin-right: 10px;
 border-radius: 2px;
 
 }
+
