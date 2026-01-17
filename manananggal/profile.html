@@ -69,20 +69,12 @@ color: white;
   max-width: 900px;
   margin: 20px auto;
   position: relative;
-  animation: fadeIn 2s;
 }
-  @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-  }
 
 .image-container img {
   width: 100%;
   height: auto;  
   display: block;
-}
-img:hover {
-  filter: brightness(1.3) drop-shadow(0 0 10px red);
 }
 
 body {
@@ -98,17 +90,7 @@ color: white;
 font-size: 60px;
 font-weight: bold;
 text-shadow: 0px 0px 10px white, 0px 0px 20px red;
-  color: darkred;
-  text-shadow: 0 0 10px red;
-  position: relative;
 }
-  .centered-text::after {
-  content: "⋮";
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  color: darkred;
-  }
 
 .subtitle-text {
 position: absolute;
@@ -137,15 +119,9 @@ padding: 12px 25px;
 border-radius: 25px;
 font-size: 16px;
 cursor: pointer;
-transition: 0.3s;
 text-shadow: 2px 2px 5px white;
 }
 
-.story-btn:hover {
-background-color: #720000;
-transform: scale(1.1);
-  background-color: darkred;
-}
 .story-btn:active {
 transform: translateY(3px) scale(0.97);
 box-shadow: 0 0 12px red;
@@ -206,39 +182,8 @@ margin-top: 15px;
 .profile-reason strong {
 font-size: 20px;
 }
-.image-container::before {
-  content: "";
-  position: relative;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-  .line {
-  display: block;
-  width: 0;
-  height: 3px;
-  background: red;
-  transition: 1s;
-}
 
-.section-title:hover .line {
-  width: 100%;
-}
-  .image-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(transparent, rgba(255,255,255,0.2), transparent);
-  animation: fog 5s infinite linear;
-}
-
-@keyframes fog {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0%); }
-}
+  
 </style>
 </head>
 <body>
@@ -273,6 +218,7 @@ font-size: 20px;
 </blockquote>
 </body>
 </html>
+
 
 
 
