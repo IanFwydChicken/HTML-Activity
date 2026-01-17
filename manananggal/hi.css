@@ -42,7 +42,7 @@ h1 {text-align: center; text-shadow: 2px 2px 10px white; color: white;}
 
 .content-box {
 background-color:#2b0000;
-width: 650px;
+width: 100%;
 padding: 50px;
 margin: 20px;
 border-radius: 20px;
@@ -55,14 +55,18 @@ color: white;
 .image-container {
 position: relative;
 width: 100%;
-max-width: 100%;
+max-width: 1024px;
+auto: 0 px;
 }
 
+
 .image-container img {
-width: 100%;
-height: 50%;
-display: block;
+  width: 100%;     
+  max-width: 1024px; 
+  height: auto;     
+  display: block;
 }
+
 
 .centered-text {
 position: absolute;
@@ -137,4 +141,5 @@ height: 30px;
 background-color: red;
 margin-right: 10px;
 border-radius: 2px;
+
 }
