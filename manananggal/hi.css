@@ -142,5 +142,10 @@ margin-right: 10px;
 border-radius: 2px;
 
 }
+.video-container {
+  display: flex;          
+  justify-content: center;
+  margin: 20px 0;         
+}
 
 
