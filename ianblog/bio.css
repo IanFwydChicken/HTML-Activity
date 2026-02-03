@@ -2,6 +2,7 @@
 body {
 background-color: #243b2c;
 animation: flicker 3s infinite;
+position: relative;
 }
 
 h2, p {
@@ -390,6 +391,7 @@ margin-left: auto;
 margin-right: auto;
 max-width: 100%;
 }
+
 
 
 
