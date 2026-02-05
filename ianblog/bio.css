@@ -180,6 +180,7 @@ border: 4px solid white;
 background-color: #627c5c;
 overflow: hidden;
 padding: 10px;
+transition: box-shadow 0.4s ease;
 }
 
 
@@ -200,7 +201,12 @@ text-shadow: 2px 2px 5px white;
 transition: 0.3s;
 }
 
+.expandable-div[open] {
+  box-shadow:
+    0 0 20px rgba(255,255,255,0.5),
+    0 0 40px rgba(255,255,255,0.25);
 
+    
 .expandable-div summary:hover {
 background-color: #4b634b;
 }
@@ -211,15 +217,34 @@ margin-top: 20px;
 color: white;
 text-shadow: 1px 1px 5px black;
 font-size: 16px;
-text-align: justify;
+text-align: justify; 
+animation: revealText 0.6s ease forwards;
 }
-
+@keyframes revealText {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .expandable-div summary::-webkit-details-marker {
 display: none;
 }
 .expandable-div summary::marker {
 content: "";
+}
+    .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.4s ease;
+}
+
+.expandable-div[open] .arrow {
+  transform: rotate(180deg);
 }
 .highlight-date {
 background-color: #4b634b;
@@ -446,6 +471,7 @@ max-width: 100%;
     0 0 18px rgba(255,255,255,0.8),
     0 0 30px rgba(255,255,255,0.6);
 }
+
 
 
 
