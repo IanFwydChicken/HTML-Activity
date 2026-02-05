@@ -422,5 +422,11 @@ img {
         0 0 40px rgba(255,255,255,0.3);
 }
 
+.lowered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 100%;
 }
 
