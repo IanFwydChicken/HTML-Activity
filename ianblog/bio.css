@@ -398,6 +398,12 @@ img {
   max-width: 100%;
 }
 
+.move-left {
+  margin-right: 40px;
+}
+.move-right {
+  margin-left: 40px;
+}
 
 
 
