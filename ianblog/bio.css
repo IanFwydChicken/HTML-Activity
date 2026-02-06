@@ -405,13 +405,13 @@ img {
 }
 
 .move-left {
-    margin-left: 50px;
+    margin-left: 60px;
     margin-right: auto;
 }
 
 .move-right {
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 .expandable-div[open] {
 animation: expandFade 0.5s ease;
@@ -428,6 +428,7 @@ animation: expandFade 0.5s ease;
         transform: translateY(0);
     }
 }
+
 
 
 
