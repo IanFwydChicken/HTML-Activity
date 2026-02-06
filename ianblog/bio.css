@@ -1,4 +1,4 @@
-body {
+ibody {
     background-color: #243b2c;
     animation: flicker 3s infinite;
     position: relative;
@@ -408,7 +408,21 @@ img {
   margin-right: 250px;
 }
 .move-right {
-  margin-left: 250px;
+  margin-left: 400px;
+}
+.expandable-div[open] {
+    animation: expandFade 0.5s ease;
+}
+
+@keyframes expandFade {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
