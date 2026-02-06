@@ -1,4 +1,4 @@
-ibody {
+body {
     background-color: #243b2c;
     animation: flicker 3s infinite;
     position: relative;
@@ -405,10 +405,10 @@ img {
 }
 
 .move-left {
-  margin-right: 250px;
+  margin-right: 300px;
 }
 .move-right {
-  margin-left: 400px;
+  margin-left: 250px;
 }
 .expandable-div[open] {
     animation: expandFade 0.5s ease;
@@ -424,6 +424,7 @@ img {
         transform: translateY(0);
     }
 }
+
 
 
 
