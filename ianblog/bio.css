@@ -129,10 +129,16 @@ h1 {
     cursor: pointer;
     text-shadow: 2px 2px 5px white;
     text-align: center;
+    transition: 
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      background-color 0.25s ease;
 }
 
 .story-btn:hover {
     background-color: #4b634b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.4);
 }
 
 .story-btn:active {
@@ -404,6 +410,7 @@ img {
 .move-right {
   margin-left: 250px;
 }
+
 
 
 
