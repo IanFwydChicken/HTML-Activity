@@ -405,13 +405,13 @@ img {
 }
 
 .move-left {
-  margin-right: 300px;
+    margin-left: 0;
+    margin-right: auto;
 }
+
 .move-right {
-  margin-left: 250px;
-}
-.expandable-div[open] {
-    animation: expandFade 0.5s ease;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 @keyframes expandFade {
@@ -424,6 +424,7 @@ img {
         transform: translateY(0);
     }
 }
+
 
 
 
