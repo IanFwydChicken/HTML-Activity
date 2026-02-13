@@ -10,25 +10,22 @@ body::before {
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(
-            circle at top left,
-            rgba(255,255,255,0.18),
-            transparent 40%
-        ),
-        radial-gradient(
-            circle at bottom right,
-            rgba(255,255,255,0.12),
-            transparent 40%
-        );
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.3), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.25), transparent 40%);
     opacity: 0.7;
-    transition: background-position 0.8s ease, opacity 0.4s ease;
+    filter: blur(8px);
+    transform: scale(1);
+    transition: 
+        background-position 0.6s ease, 
+        opacity 0.4s ease, 
+        transform 0.6s ease;
     z-index: -1;
 }
+
 body:hover::before {
-    background-position:
-        100% 0%,
-        0% 100%;
-    opacity: 0.85;
+    background-position: 150% 0%, -50% 100%;
+    opacity: 1;
+    transform: scale(1.05);
 }
 h2, p {
     margin: 10px;
@@ -631,3 +628,4 @@ animation: expandFade 0.5s ease;
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(0,0,0,0.35);
 }
+
