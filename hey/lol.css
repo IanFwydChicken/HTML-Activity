@@ -189,7 +189,9 @@ font-family: Brush Script MT;
 .story-btn:hover {
     background-color: #79C9C5;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255,255,255,0.4);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.4),
+    0 0 30px rgba(255,255,255,0.2),
+    0 0 15px rgba(255, 255, 255, 0.6) inset;
 }
 
 .story-btn:active {
@@ -628,4 +630,5 @@ animation: expandFade 0.5s ease;
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(0,0,0,0.35);
 }
+
 
