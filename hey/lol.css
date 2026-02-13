@@ -2,21 +2,20 @@ body {
     background-color:#3F9AAE;
     animation: flicker 3s infinite;
     position: relative;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(120deg, #3F9AAE, #79C9C5, #296374);
-  background-size: 400% 400%;
-  animation: gradientMove 15s ease infinite;
-  z-index: -1;
-}
+    overflow-x: hidden;
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+        circle at var(--x, 50%) var(--y, 50%),
+        rgba(255, 255, 255, 0.18),
+        transparent 40%
+    );
+    pointer-events: none;
+    z-index: -1;
+    transition: background 0.1s ease;
 }
 
 h2, p {
@@ -603,3 +602,4 @@ animation: expandFade 0.5s ease;
     align-self: center;
 
 }
+
