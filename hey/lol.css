@@ -24,7 +24,12 @@ body::before {
     transition: background-position 0.8s ease, opacity 0.4s ease;
     z-index: -1;
 }
-
+body:hover::before {
+    background-position:
+        100% 0%,
+        0% 100%;
+    opacity: 1;
+}
 h2, p {
     margin: 10px;
     text-align: justify;
@@ -609,5 +614,6 @@ animation: expandFade 0.5s ease;
     align-self: center;
 
 }
+
 
 
