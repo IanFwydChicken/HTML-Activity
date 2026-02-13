@@ -614,6 +614,11 @@ animation: expandFade 0.5s ease;
     align-self: center;
 
 }
-
+.glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
 
 
