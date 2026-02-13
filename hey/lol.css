@@ -3,6 +3,21 @@ body {
     animation: flicker 3s infinite;
     position: relative;
 }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, #3F9AAE, #79C9C5, #296374);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 h2, p {
     margin: 10px;
@@ -586,4 +601,5 @@ animation: expandFade 0.5s ease;
 
 .feedback-form button {
     align-self: center;
+
 }
